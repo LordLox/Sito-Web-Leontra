@@ -7,77 +7,102 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-    <div class="sidebars">
-        <img src="images\Banner.png" alt="sidebarL" class="sidebarL">
-        <img src="images\Banner.png" alt="sidebarR" class="sidebarR">
+
+    <div class="side-border left"></div>
+    <div class="side-border right"></div>
+
+    <div class="main-container">
+        <header>
+            <nav id="desktop-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li> 
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="discussions.html">Discussions</a></li>
+                    <li><a href="suggestions.html">Suggestions</a></li>
+                    <li><a href="contact.html">Business Contact</a></li>
+                </ul>
+            </nav>
+
+            <div id="mobile-menu-header">
+                <a href="index.html" class="mobile-logo">Leontra's Lair</a>
+                <button id="hamburger-btn" aria-label="Apri menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="mobile-nav-overlay" class="mobile-nav">
+                <a href="javascript:void(0)" id="close-btn" class="close-btn">&times;</a>
+                <div class="mobile-nav-content">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="discussions.html">Discussions</a>
+                    <a href="suggestions.html">Suggestions</a>
+                    <a href="contact.html">Business Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="welcome-section">
+                <h2>WELCOME TO</h2>
+                <h1>LEONTRA'S LAIR!</h1>
+                <h3>Make your Choice!</h3>
+            </div>
+
+            <div class="choice-section">
+                <div class="choice-row">
+                    <div class="choice-item">
+                        <div class="tag hot">HOT 🔥</div>
+                        <div class="content-box video-box">
+                            <iframe width="450" height="215" src="https://www.youtube.com/embed/6fP2amMnphI?si=43xcEqMm5beX7b3Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <h2 class="section-title">&lt;-- Videos --&gt;</h2>
+                    
+                    <div class="choice-item">
+                        <div class="tag recent">MOST RECENT ✨</div>
+                        <div class="content-box video-box">
+                            <iframe width="450" height="215" src="https://www.youtube.com/embed/5kquKw3LIhE?si=9OJvqs96cNCbqQQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="or-separator">OR</div>
+
+            <div class="choice-section">
+                 <div class="choice-row">
+                    <div class="choice-item">
+                        <div class="tag hot">HOT 🔥</div>
+                        <div class="content-box discussion-box">
+                            <p><a href="#">Unmatched Houdini and Genie, who is strongest?</a></p>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title">&lt;-- Discussions --&gt;</h2>
+
+                    <div class="choice-item">
+                        <div class="tag recent">MOST RECENT ✨</div>
+                        <div class="content-box discussion-box">
+                           <p><a href="#">Is D&D really the best TTRPG?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Leontra's Lair. All rights reserved.</p>
+            </div>
+        </footer>
     </div>
-    <div class="navbar">
-        <div>
-            <p>Home</p>
-        </div>
-        <div>
-            <p>Shop</p>
-        </div>
-        <div>
-            <p>Discussions</p>
-        </div>
-        <div>
-            <p>Suggestions</p>
-        </div>
-        <div>
-            <p>Business Contact</p>
-        </div>
-    </div>
-    <div class="header">
-        <h2>Welcome to</h2>
-        <h1>Leontra's Lair</h1>
-        <h2>Make your choice!</h2>
-    </div>
-    <div class="videos">
-        <div>
-            <div>
-                <p>HOT🔥</p>
-            </div>
-            <div>
-                <p>MOST RECENT ✨</p>
-            </div>
-        </div>
-        <div>
-            <div class="video_hot">
-                <a href="https://youtu.be/ArCqwKGaXKY?si=c-BKunT8__kOdWJJ"> <img src="images\Leontra.jpg" alt="video_1"></a>
-            </div>
-            <div>
-                <p><--------------- Videos ---------------></p>
-            </div>
-            <div class="video_recent">
-                <a href="https://youtu.be/kX_dfBYbPQo?si=XVA5sJ5Rp7vGaizO"> <img src="images\Leontra.jpg" alt="video_2"></a>
-            </div>
-        </div>  
-    </div>
-    <p>OR</p>
-    <div class="Discussions">
-        <div>
-            <div>
-                <p>HOT🔥</p>
-            </div>
-            <div>
-                <p>MOST RECENT ✨</p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <p>Unmatched Houdini and Genie, who is the strongest?</p>
-            </div>
-            <p><--------------- Discussions ---------------></p>
-            <div>
-                <p>Is D&D really the best TTRPG?</p>
-            </div>
-        </div>
-    </div>
+    
+    <script src="js/main.js"></script>
 </body>
-<script src="/js/main.js"></script>
 </html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Leontra's Lair</title>
+    <!-- Link all'unico file CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <!-- Icone da Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="side-border left"></div>
+    <div class="side-border right"></div>
+
+    <div class="main-container">
+        <header>
+            <nav id="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="discussions.html">Discussions</a></li>
+                    <li><a href="suggestions.html">Suggestions</a></li>
+                    <li><a href="contact.html">Business Contact</a></li>
+                </ul>
+            </nav>
+
+            <div id="mobile-menu-header">
+                <a href="index.html" class="mobile-logo">Leontra's Lair</a>
+                <button id="hamburger-btn" aria-label="Apri menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="mobile-nav-overlay" class="mobile-nav">
+                <a href="javascript:void(0)" id="close-btn" class="close-btn">&times;</a>
+                <div class="mobile-nav-content">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="discussions.html">Discussions</a>
+                    <a href="suggestions.html">Suggestions</a>
+                    <a href="contact.html">Business Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="shop-main">
+            <div class="shop-header">
+                <h1>Creator's Showcase</h1>
+                <p>Discover all my games and products!</p>
+            </div>
+
+            <!-- Sezione Giochi -->
+            <section class="shop-section">
+                <h2><i class="fas fa-dice-d20"></i> BoardGames</h2>
+                <div class="shop-grid">
+                    <!-- Prodotto 1 -->
+                    <div class="shop-item-card">
+                        <div class="card-image-container">
+                            <img src="images\prisonsanddragons.png" alt="Nome del Gioco 1">
+                        </div>
+                        <div class="card-content">
+                            <h3>Prisons and Dragons</h3>
+                            <p class="item-description">In this cooperative fantasy card game, imprisoned heroes must team up to battle a powerful dragon and win their freedom. Strategically use your cards and unique abilities to overcome challenges and escape the magical prison together.</p>
+                        </div>
+                    </div>
+                     <!-- Prodotto 2 -->
+                    <div class="shop-item-card">
+                         <div class="card-image-container">
+                            <img src="images\monsterbeatshuman.png" alt="Nome del Gioco 2">
+                        </div>
+                        <div class="card-content">
+                            <h3>Monster beats Human</h3>
+                            <p class="item-description">Welcome to the world of "Monster beats Human"! You have four rounds to explore and collect the cutest, coolest, and most powerful creatures. Assemble your ultimate team and then face off against your rivals in a fun-filled, friendly battle to see who the best collector is!</p>
+                        </div>
+                    </div>
+                     <!-- Prodotto 3 -->
+                    <div class="shop-item-card">
+                         <div class="card-image-container">
+                            <img src="images\warordiplomacy.png" alt="Nome del Gioco 3">
+                        </div>
+                        <div class="card-content">
+                            <h3>War or Diplomacy?</h3>
+                            <p class="item-description">Build your civilization, forge alliances, and decide the fate of the world. In this strategy game, every treaty is fragile and every friendship is a potential weapon. Will you achieve victory through steadfast diplomacy or calculated betrayal? The choice is yours.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sezione Merchandise -->
+            <section class="shop-section">
+                <h2><i class="fas fa-tshirt"></i> Official Merchandising</h2>
+                 <div class="shop-grid">
+                    <!-- Prodotto 4 -->
+                    <div class="shop-item-card">
+                        <div class="card-image-container">
+                            <img src="images\shirt.png" alt="Maglietta">
+                        </div>
+                        <div class="card-content">
+                            <h3>Official Leontra T-Shirt</h3>
+                            <p class="item-description">A very confy and cure t-shirt for all your daily needs!</p>
+                        </div>
+                    </div>
+                     <!-- Prodotto 5 -->
+                    <div class="shop-item-card">
+                         <div class="card-image-container">
+                             <img src="images\mug.png" alt="Tazza">
+                        </div>
+                        <div class="card-content">
+                            <h3>Official Leontra Mug</h3>
+                            <p class="item-description">A practical and cure mug, so you can have a smile every morning!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Leontra's Lair. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

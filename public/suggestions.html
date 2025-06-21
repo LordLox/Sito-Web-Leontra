@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestions - Leontra's Lair</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="side-border left"></div>
+    <div class="side-border right"></div>
+
+    <div class="main-container">
+        <header>
+            <nav id="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="discussions.html">Discussions</a></li>
+                    <li><a href="suggestions.html" class="active">Suggestions</a></li>
+                    <li><a href="contact.html">Business Contact</a></li>
+                </ul>
+            </nav>
+
+            <div id="mobile-menu-header">
+                <a href="index.html" class="mobile-logo">Leontra's Lair</a>
+                <button id="hamburger-btn" aria-label="Apri menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="mobile-nav-overlay" class="mobile-nav">
+                <a href="javascript:void(0)" id="close-btn" class="close-btn">&times;</a>
+                <div class="mobile-nav-content">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="discussions.html">Discussions</a>
+                    <a href="suggestions.html">Suggestions</a>
+                    <a href="contact.html">Business Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="suggestions-main">
+            <div class="shop-header"> <h1>Suggest a board game!</h1>
+                <p>Suggest the games you'd like to see in the next video. The most voted ones will make it into the ranking!</p>
+            </div>
+
+            <div class="suggestions-layout">
+                <div class="suggestion-form-container">
+                    <h2><i class="fas fa-lightbulb"></i>Your Suggestion</h2>
+                    <form action="#" method="POST">
+                        <label for="game-name">Board game name</label>
+                        <input type="text" id="game-name" name="game-name" placeholder="Es: Everdell, Wingspan, Root...">
+                        
+                        <label for="user-name">Your Nickname (Optional)</label>
+                        <input type="text" id="user-name" name="user-name" placeholder="Es: Gamer_91">
+                        
+                        <button type="submit" class="submit-suggestion-btn">
+                            <i class="fas fa-paper-plane"></i> Submit suggestion
+                        </button>
+                    </form>
+                </div>
+
+                <div class="top-suggestions-container">
+                    <h2><i class="fas fa-trophy"></i> Top 10 suggested board games</h2>
+                    <ol class="leaderboard-list">
+                        <li><span class="game-name">Blood on the Clocktower</span> <span class="vote-count">148 votes</span></li>
+                        <li><span class="game-name">Ark Nova</span> <span class="vote-count">121 votes</span></li>
+                        <li><span class="game-name">Nemesis</span> <span class="vote-count">105 votes</span></li>
+                        <li><span class="game-name">Brass: Birmingham</span> <span class="vote-count">98 votes</span></li>
+                        <li><span class="game-name">Dune: Imperium</span> <span class="vote-count">91 votes</span></li>
+                        <li><span class="game-name">Heat: Pedal to the Metal</span> <span class="vote-count">85 votes</span></li>
+                        <li><span class="game-name">Terraforming Mars</span> <span class="vote-count">76 votes</span></li>
+                        <li><span class="game-name">Everdell</span> <span class="vote-count">72 votes</span></li>
+                        <li><span class="game-name">Le Rovine di Arnak</span> <span class="vote-count">68 votes</span></li>
+                        <li><span class="game-name">Twilight Imperium: 4ª Ed.</span> <span class="vote-count">65 votes</span></li>
+                    </ol>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Leontra's Lair. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

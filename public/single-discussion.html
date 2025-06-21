@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titolo della Discussione - Leontra's Lair</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="side-border left"></div>
+    <div class="side-border right"></div>
+
+    <div class="main-container">
+        <header>
+            <nav id="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="discussions.html" class="active">Discussions</a></li>
+                    <li><a href="suggestions.html">Suggestions</a></li>
+                    <li><a href="contact.html">Business Contact</a></li>
+                </ul>
+            </nav>
+
+            <div id="mobile-menu-header">
+                <a href="index.html" class="mobile-logo">Leontra's Lair</a>
+                <button id="hamburger-btn" aria-label="Apri menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="mobile-nav-overlay" class="mobile-nav">
+                <a href="javascript:void(0)" id="close-btn" class="close-btn">&times;</a>
+                <div class="mobile-nav-content">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="discussions.html">Discussions</a>
+                    <a href="suggestions.html">Suggestions</a>
+                    <a href="contact.html">Business Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="single-post-main">
+            <div class="post-header">
+                <h1>Is D&D really the best TTRPG?</h1>
+                <div class="post-meta">
+                    <span class="meta-item"><i class="fas fa-user"></i> Postato da <a href="#">GamerGod</a></span>
+                    <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2 giorni fa</span>
+                    <span class="meta-item"><i class="fas fa-comments"></i> 3 Commenti</span>
+                </div>
+            </div>
+
+            <article class="post-content">
+                <p>Ciao a tutti! Apro questa discussione che sicuramente farà parlare. Da anni sento dire che Dungeons & Dragons è il re indiscusso dei giochi di ruolo da tavolo, ma è davvero così?</p>
+                <p>Personalmente, ho provato molti altri sistemi che trovo più innovativi o adatti a certi tipi di storie. Penso a giochi come <strong>Vampire: The Masquerade</strong> per le storie cupe e personali, o a sistemi più semplici come <strong>Dungeon World</strong> per chi ama la narrazione condivisa.</p>
+                <p>Cosa ne pensate? Quali sono le vostre esperienze? D&D merita il suo trono o è solo il più famoso?</p>
+                <blockquote class="post-quote">
+                    "Il miglior gioco è quello che porta il tuo gruppo a divertirsi di più, indipendentemente dal nome sulla scatola."
+                </blockquote>
+                <p>Attendo i vostri pareri!</p>
+            </article>
+
+            <section class="comments-section">
+                <h2><i class="fas fa-comments"></i> Commenti</h2>
+
+                <div class="comment-item">
+                    <div class="comment-author-avatar">
+                        <img src="https://placehold.co/80x80/7b4f9d/ffffff?text=C" alt="Avatar di CritMaster">
+                    </div>
+                    <div class="comment-body">
+                        <div class="comment-meta">
+                            <strong class="comment-author">CritMaster</strong>
+                            <span class="comment-date">Oggi alle 14:30</span>
+                        </div>
+                        <p class="comment-text">Ottima domanda! Secondo me la forza di D&D 5e è la sua accessibilità. È facile da imparare per i neofiti e ha una quantità enorme di materiale ufficiale e non. Questo lo rende un punto di partenza perfetto per quasi tutti.</p>
+                    </div>
+                </div>
+
+                <div class="comment-item">
+                     <div class="comment-author-avatar">
+                        <img src="https://placehold.co/80x80/ca6565/ffffff?text=D" alt="Avatar di DeckMaster">
+                    </div>
+                    <div class="comment-body">
+                        <div class="comment-meta">
+                            <strong class="comment-author">DeckMaster</strong>
+                            <span class="comment-date">Ieri alle 21:15</span>
+                        </div>
+                        <p class="comment-text">Non sono d'accordo. Penso che il sistema di combattimento sia troppo lento e "gonfio". Preferisco sistemi più snelli dove l'azione è più cinematografica. D&D è ottimo, ma non è il "migliore" in assoluto.</p>
+                    </div>
+                </div>
+
+                <div class="add-comment-form">
+                    <h3>Lascia un commento</h3>
+                    <form action="#" method="POST">
+                        <textarea name="comment" rows="5" placeholder="Scrivi qui il tuo commento..." required></textarea>
+                        <button type="submit" class="submit-suggestion-btn">
+                            <i class="fas fa-paper-plane"></i> Pubblica Commento
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Leontra's Lair. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

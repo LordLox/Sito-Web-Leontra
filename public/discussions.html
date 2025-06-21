@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussions - Leontra's Lair</title>
+    <!-- NOTA: Usiamo un file CSS separato per non sovrascrivere gli stili della home -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <!-- Icone da Font Awesome per il forum -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="side-border left"></div>
+    <div class="side-border right"></div>
+
+    <div class="main-container">
+        <header>
+            <nav id="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="discussions.html" class="active">Discussions</a></li>
+                    <li><a href="suggestions.html">Suggestions</a></li>
+                    <li><a href="contact.html">Business Contact</a></li>
+                </ul>
+            </nav>
+
+            <div id="mobile-menu-header">
+                <a href="index.html" class="mobile-logo">Leontra's Lair</a>
+                <button id="hamburger-btn" aria-label="Apri menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div id="mobile-nav-overlay" class="mobile-nav">
+                <a href="javascript:void(0)" id="close-btn" class="close-btn">&times;</a>
+                <div class="mobile-nav-content">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="discussions.html">Discussions</a>
+                    <a href="suggestions.html">Suggestions</a>
+                    <a href="contact.html">Business Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="forum-main">
+            <div class="forum-header">
+                <h1>Discussions Forum</h1>
+                <button class="new-discussion-btn">
+                    <i class="fas fa-plus"></i> New Discussion
+                </button>
+            </div>
+            
+            <div class="discussion-list">
+                <!-- Esempio di Discussione 1 -->
+                <div class="discussion-item">
+                    <div class="discussion-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="discussion-details">
+                        <a href="single-discussion.html" class="discussion-title">Is D&D really the best TTRPG?</a>
+                        <p class="discussion-meta">2 days ago</p>
+                    </div>
+                    <div class="discussion-stats">
+                        <p><strong>28</strong> Comments</p>
+                        <p><strong>1,4k</strong> Views</p>
+                    </div>
+                    <div class="discussion-last-post">
+                        <p>Last post by CritMaster</p>
+                        <p class="post-time">Today at 14:30</p>
+                    </div>
+                </div>
+
+                <!-- Esempio di Discussione 2 -->
+                <div class="discussion-item">
+                    <div class="discussion-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="discussion-details">
+                        <a href="single-discussion.html" class="discussion-title">Unmatched Houdini and Genie, who is strongest?</a>
+                        <p class="discussion-meta">5 days ago</p>
+                    </div>
+                    <div class="discussion-stats">
+                        <p><strong>15</strong> Comments</p>
+                        <p><strong>980</strong> Views</p>
+                    </div>
+                    <div class="discussion-last-post">
+                        <p>Last post by DeckMaster</p>
+                        <p class="post-time">Yesterday at 21:15</p>
+                    </div>
+                </div>
+                
+                 <!-- Esempio di Discussione 3 -->
+                <div class="discussion-item">
+                    <div class="discussion-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="discussion-details">
+                        <a href="single-discussion.html" class="discussion-title">My favorite character builds for the new RPG release</a>
+                        <p class="discussion-meta">1 week ago</p>
+                    </div>
+                    <div class="discussion-stats">
+                        <p><strong>42</strong> Comments</p>
+                        <p><strong>3,2k</strong> Views</p>
+                    </div>
+                    <div class="discussion-last-post">
+                        <p>Last post by MinMaxer</p>
+                        <p class="post-time">3 days ago</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Leontra's Lair. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
